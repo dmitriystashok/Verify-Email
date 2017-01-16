@@ -26,7 +26,7 @@ public class VerifyLogin {
 //        emailPage = new EmailPage(webDriver);
         //Facade pattern
         initPage = new InitPage(webDriver);
-        initPage.loginPage().fillLoginForm("dmitriy_stashok1", "dmitriy_stashok123456");
+        initPage.loginPage().fillLoginForm("", "dmitriy_stashok123456");
         initPage.loginPage().clickLoginButton();
     }
 
