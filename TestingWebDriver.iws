@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7083d24d-bdfa-40af-9bb2-b69c1d1610b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/email/EmailPage.class" afterPath="$PROJECT_DIR$/target/test-classes/email/EmailPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/email/InitPage.class" afterPath="$PROJECT_DIR$/target/test-classes/email/InitPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/email/InitializeDriver.class" afterPath="$PROJECT_DIR$/target/test-classes/email/InitializeDriver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/email/LoginPage.class" afterPath="$PROJECT_DIR$/target/test-classes/email/LoginPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/email/VerifyLogin.class" afterPath="$PROJECT_DIR$/target/test-classes/email/VerifyLogin.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/email/WriteMailPage.class" afterPath="$PROJECT_DIR$/target/test-classes/email/WriteMailPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/search/OpenPage.class" afterPath="$PROJECT_DIR$/target/test-classes/search/OpenPage.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestingWebDriver.iml" afterPath="$PROJECT_DIR$/TestingWebDriver.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestingWebDriver.ipr" afterPath="$PROJECT_DIR$/TestingWebDriver.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestingWebDriver.iws" afterPath="$PROJECT_DIR$/TestingWebDriver.iws" />
@@ -53,8 +46,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+            <state relative-caret-position="551">
+              <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -659,9 +652,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="VerifyLogin - 2016.12.20 at 19h 43m 46s.xml">
-      <configuration name="VerifyLogin" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="VerifyLogin - 2016.12.20 at 19h 44m 29s.xml">
       <configuration name="VerifyLogin" configurationId="JUnit" />
     </history-entry>
@@ -687,6 +677,9 @@
       <configuration name="VerifyLogin" configurationId="JUnit" />
     </history-entry>
     <history-entry file="VerifyLogin - 2017.01.16 at 18h 24m 11s.xml">
+      <configuration name="VerifyLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="VerifyLogin - 2017.01.16 at 18h 28m 09s.xml">
       <configuration name="VerifyLogin" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1137,8 +1130,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+        <state relative-caret-position="551">
+          <caret line="69" column="31" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="31" />
           <folding />
         </state>
       </provider>
