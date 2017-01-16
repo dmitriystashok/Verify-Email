@@ -36,6 +36,7 @@ public class VerifyLogin {
         System.out.println("Logged successfully");
     }
 
+    @Ignore
     @Test
     public void checkLogOut() throws InterruptedException {
         initPage.emailPage().logOut();
