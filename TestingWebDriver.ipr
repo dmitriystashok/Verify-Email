@@ -760,6 +760,13 @@
         <root url="jar://$MAVEN_REPOSITORY$/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="selenium-server-standalone-2.53.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/selenium-server-standalone-2.53.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
   </component>
   <component name="masterDetails">
     <states>
