@@ -16,7 +16,7 @@ public class LoginPage {
 
     @FindBy(name="pass") WebElement passField;
 
-    @FindBy(xpath = "//input[@value='Войти']") WebElement loginButton;
+    @FindBy(css = ".content.clear>form>p>input") WebElement loginButton;
 
     public LoginPage(WebDriver driver){
         webDriver = driver;
