@@ -1,9 +1,5 @@
 package search;
-
-import org.junit.After;
-import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +7,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 //import org.testng.annotations.AfterTest;
 //import org.testng.annotations.BeforeTest;
 
@@ -24,7 +24,7 @@ public class OpenPage {
     private ChromeDriver driver;
     private static final String Start_URL="https://www.google.com.ua";
 
-    @Before
+    @BeforeTest(enabled = false)
     public void setDriver(){
     System.setProperty("webdriver.chrome.driver", "D:\\Home\\Java\\BrowserDrivers\\chromedriver.exe");
     driver=new ChromeDriver();
@@ -40,25 +40,25 @@ public class OpenPage {
     driver.findElement(By.name("btnG")).click();
 }
 
-    @Test
+    @Test(enabled = false)
     public void openPage(){
         driver.get(Start_URL);
         searchField("selenium");
         buttonClick();
-        assert(driver.findElement(By.xpath("//a[contains(.,'Selenium - Web Browser Automation')]")).isDisplayed());
+        Assert.assertTrue(driver.findElement(By.xpath("//a[contains(.,'Selenium - Web Browser Automation')]")).isDisplayed(), "Login page is not opened");
         System.out.println("Test finished");
     }
 
-    @Test
+    @Test (enabled = false)
     public void anotherSearch(){
         driver.get(Start_URL);
         searchField("Google");
         buttonClick();
-        assert(driver.findElement(By.xpath("//span[contains(.,'Пошукова система українською мовою. Пошук сторінок зі світу чи з України.')]")).isDisplayed());
+        Assert.assertTrue(driver.findElement(By.xpath("//span[contains(.,'Пошукова система українською мовою. Пошук сторінок зі світу чи з України.')]")).isDisplayed());
         System.out.println("Test 2 finished");
     }
 
-   @After
+   @AfterClass(enabled = false)
     public void tearDown(){
         driver.close();
     }
