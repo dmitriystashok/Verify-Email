@@ -22,7 +22,7 @@ public class EmailPage {
     }
 
     @FindBy(xpath = "//span[contains(.,'dmitriy_stashok1@i.ua')]") WebElement emailName;
-    @FindBy(xpath = "//span[@title='Настройки']") WebElement settings;
+    @FindBy(css = ".icon-ho.ho_settings.ho_i_settings") WebElement settings;
     @FindBy(xpath = "//*[@id='accountSettingsPopup']/ul/li[7]/a") WebElement exit;
     @FindBy(xpath = "//a[contains(.,'Создать письмо')]") WebElement createMailButton;
     @FindBy(xpath = "//div[contains(.,'Письмо успешно отправлено адресатам')]") WebElement messageSentInfo;
