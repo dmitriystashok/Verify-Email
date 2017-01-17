@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7083d24d-bdfa-40af-9bb2-b69c1d1610b5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/email/EmailPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/email/InitPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/email/InitializeDriver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/email/LoginPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/email/VerifyLogin.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/email/WriteMailPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/search/OpenPage.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestingWebDriver.iml" afterPath="$PROJECT_DIR$/TestingWebDriver.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestingWebDriver.ipr" afterPath="$PROJECT_DIR$/TestingWebDriver.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestingWebDriver.iws" afterPath="$PROJECT_DIR$/TestingWebDriver.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/email/VerifyLogin.java" afterPath="$PROJECT_DIR$/src/test/java/email/VerifyLogin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/search/OpenPage.java" afterPath="$PROJECT_DIR$/src/test/java/search/OpenPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testng.xml" afterPath="$PROJECT_DIR$/testng.xml" />
     </list>
     <ignored path="TestingWebDriver.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,8 +44,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="35" selection-end-column="57" />
+            <state relative-caret-position="374">
+              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -1222,8 +1212,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="35" selection-end-column="57" />
+        <state relative-caret-position="374">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
           <folding />
         </state>
       </provider>
