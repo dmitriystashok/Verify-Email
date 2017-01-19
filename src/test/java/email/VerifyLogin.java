@@ -44,7 +44,6 @@ public class VerifyLogin {
     }
 
 
-
     @Test(priority = 1)
     public void checkThatLogged() {
         Assert.assertTrue(emailPage.emailName.isDisplayed(), "email name is not displayed");
@@ -60,7 +59,7 @@ public class VerifyLogin {
         System.out.println("We are logged out");
     }
 
-    @Test (priority = 3)
+    @Test(priority = 3)
     public void checkSendEmail() throws InterruptedException {
         loginPage.fillLoginForm(LoginName, Password);
         emailPage.clickCreateMessageButton();
@@ -80,14 +79,14 @@ public class VerifyLogin {
 
     @Test(priority = 4)
     public void checkMessageIsInInBox() throws InterruptedException {
-        emailPage.logOut();
+
         loginPage.fillLoginForm(LoginName, Password);
         emailPage.clickCreateMessageButton();
         writeMailPage.sendEmail(SendMailTo, EmailTheme, EmailTheme);
         emailPage.openInBox();
         Assert.assertEquals("Test Letter", emailPage.themeName.getText(), "Message is not in inbox");
         System.out.println("Sent message with theme " + emailPage.themeName.getText() + " is in the inBox");
-
+        emailPage.logOut();
     }
 
     @AfterClass
