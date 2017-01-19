@@ -61,7 +61,6 @@ public class VerifyLogin {
 
     @Test(priority = 3)
     public void checkSendEmail() throws InterruptedException {
-        emailPage.logOut();
         loginPage.fillLoginForm(LoginName, Password);
         emailPage.clickCreateMessageButton();
         writeMailPage.sendEmail(SendMailTo, EmailTheme, EmailTheme);
