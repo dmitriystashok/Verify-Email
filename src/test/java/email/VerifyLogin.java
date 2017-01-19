@@ -78,15 +78,16 @@ public class VerifyLogin {
         emailPage.logOut();
     }
 
-    @Test(priority = 3)
+    @Test(priority = 4)
     public void checkMessageIsInInBox() throws InterruptedException {
+        emailPage.logOut();
         loginPage.fillLoginForm(LoginName, Password);
         emailPage.clickCreateMessageButton();
         writeMailPage.sendEmail(SendMailTo, EmailTheme, EmailTheme);
         emailPage.openInBox();
         Assert.assertEquals("Test Letter", emailPage.themeName.getText(), "Message is not in inbox");
         System.out.println("Sent message with theme " + emailPage.themeName.getText() + " is in the inBox");
-        emailPage.logOut();
+
     }
 
     @AfterClass
