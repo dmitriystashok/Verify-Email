@@ -15,29 +15,46 @@ public class EmailPage {
     private WebDriver webDriver;
     private WebDriverWait wait;
 
-    public EmailPage(WebDriver driver){
+    public EmailPage(WebDriver driver) {
         webDriver = driver;
         wait = new WebDriverWait(webDriver, 5);
         PageFactory.initElements(webDriver, this);
     }
 
-    @FindBy(xpath = "//span[contains(.,'dmitriy_stashok1@i.ua')]") WebElement emailName;
-    @FindBy(css = ".icon-ho.ho_settings.ho_i_settings") WebElement settings;
-    @FindBy(xpath = "//*[@id='accountSettingsPopup']/ul/li[7]/a") WebElement exit;
-    @FindBy(xpath = "//a[contains(.,'Создать письмо')]") WebElement createMailButton;
-    @FindBy(xpath = "//div[contains(.,'Письмо успешно отправлено адресатам')]") WebElement messageSentInfo;
-    @FindBy(xpath = "//a[contains(.,'Входящие')]") WebElement inBox;
-    @FindBy(xpath = "//*[@id='mesgList']//span[contains(.,'Test Letter')]") WebElement themeName;
-    @FindBy(xpath = "//*[@type='checkbox']") WebElement checkBox;
+    @FindBy(xpath = "//span[contains(.,'dmitriy_stashok1@i.ua')]")
+    WebElement emailName;
+    @FindBy(css = ".icon-ho.ho_settings.ho_i_settings")
+    WebElement settings;
+    @FindBy(xpath = "//*[@id='accountSettingsPopup']/ul/li[7]/a")
+    WebElement exit;
+    @FindBy(css = ".make_message>a")
+    WebElement createMailButton;
+    @FindBy(css = ".content.clear")
+    WebElement messageSentInfo;
+    @FindBy(css = ".new>a[href^='/list/INBOX']")
+    WebElement inBox;
+    @FindBy(xpath = "//*[@id='mesgList']//span[contains(.,'Test Letter')]")
+    WebElement themeName;
+    @FindBy(xpath = "//*[@type='checkbox']")
+    WebElement checkBox;
 
     public void logOut() throws InterruptedException {
         settings.click();
         wait.until(ExpectedConditions.elementToBeClickable(exit));
         exit.click();
     }
-    public void clickCreateMessageButton(){createMailButton.click();}
-    public void openInBox(){inBox.click();}
+
+    public void clickCreateMessageButton() {
+        createMailButton.click();
+    }
+
+    public void openInBox() {
+        inBox.click();
+    }
+
     public void selectCheckBox() {
         checkBox.click();
     }
+
+
 }

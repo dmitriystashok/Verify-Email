@@ -12,23 +12,27 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class LoginPage {
     private WebDriver webDriver;
 
-    @FindBy(name="login") WebElement loginField;
+    @FindBy(name = "login")
+    WebElement loginField;
 
-    @FindBy(name="pass") WebElement passField;
+    @FindBy(name = "pass")
+    WebElement passField;
 
-    @FindBy(css = ".content.clear>form>p>input") WebElement loginButton;
+    @FindBy(css = ".content.clear>form>p>input")
+    WebElement loginButton;
 
-    public LoginPage(WebDriver driver){
+    public LoginPage(WebDriver driver) {
         webDriver = driver;
         PageFactory.initElements(webDriver, this);
     }
 
-    public void fillLoginForm (String uId,String uPass) {
+    public void fillLoginForm(String uId, String uPass) {
         loginField.sendKeys(uId);
         passField.sendKeys(uPass);
-
+        loginButton.click();
     }
-    public void clickLoginButton(){
+
+    public void clickLoginButton() {
         loginButton.click();
     }
 }

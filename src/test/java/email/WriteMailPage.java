@@ -11,23 +11,30 @@ import org.openqa.selenium.support.PageFactory;
 public class WriteMailPage {
     private WebDriver webDriver;
 
-    public WriteMailPage (WebDriver driver){
+    public WriteMailPage(WebDriver driver) {
         webDriver = driver;
         PageFactory.initElements(webDriver, this);
     }
 
-    @FindBy(id="to") WebElement toWhomField;
-    @FindBy(name="subject") WebElement themeField;
-    @FindBy(name="send") WebElement sendBtn;
-    @FindBy(id="text") WebElement textField;
-    @FindBy(id="to_errCtrl") WebElement errorMessage;
+    @FindBy(id = "to")
+    WebElement toWhomField;
+    @FindBy(name = "subject")
+    WebElement themeField;
+    @FindBy(name = "send")
+    WebElement sendBtn;
+    @FindBy(id = "text")
+    WebElement textField;
+    @FindBy(id = "to_errCtrl")
+    WebElement errorMessage;
 
-    public void sendEmail(String toWhom, String theme, String text){
+    public void sendEmail(String toWhom, String theme, String text) {
         toWhomField.sendKeys(toWhom);
         themeField.sendKeys(theme);
         textField.sendKeys(text);
+        sendBtn.click();
     }
-    public void pressSendBtn(){
+
+    public void pressSendBtn() {
         sendBtn.click();
     }
 }
