@@ -44,7 +44,7 @@ public class VerifyLogin {
     }
 
 
-    @Test(priority = 1)
+    @Test(priority = 1, enabled = false)
     public void checkThatLogged() {
         Assert.assertTrue(emailPage.emailName.isDisplayed(), "email name is not displayed");
         System.out.println("Logged successfully");
@@ -59,7 +59,7 @@ public class VerifyLogin {
         System.out.println("We are logged out");
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3, enabled = false)
     public void checkSendEmail() throws InterruptedException {
         loginPage.fillLoginForm(LoginName, Password);
         emailPage.clickCreateMessageButton();
@@ -68,7 +68,7 @@ public class VerifyLogin {
         emailPage.logOut();
     }
 
-    @Test(priority = 4)
+    @Test(priority = 4, enabled = false)
     public void checkFailedEmailSend() throws InterruptedException {
         loginPage.fillLoginForm(LoginName, Password);
         emailPage.clickCreateMessageButton();
@@ -77,7 +77,7 @@ public class VerifyLogin {
         emailPage.logOut();
     }
 
-    @Test(priority = 4)
+    @Test(priority = 4, enabled = false)
     public void checkMessageIsInInBox() throws InterruptedException {
 
         loginPage.fillLoginForm(LoginName, Password);
