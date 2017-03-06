@@ -44,7 +44,7 @@ public class VerifyLogin {
     }
 
 
-    @Test(priority = 1, enabled = false)
+    @Test(priority = 1)
     public void checkThatLogged() {
         Assert.assertTrue(emailPage.emailName.isDisplayed(), "email name is not displayed");
         System.out.println("Logged successfully");
