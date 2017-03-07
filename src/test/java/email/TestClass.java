@@ -36,7 +36,7 @@ public class TestClass {
 //        loginPage.clickLoginButton();
     }
 
-    @Test(priority = 3, enabled = true)
+    @Test(priority = 1)
     public void checkSendEmail() throws InterruptedException {
         emailPage.clickCreateMessageButton();
         writeMailPage.sendEmail(SendMailTo, EmailTheme, EmailTheme);
